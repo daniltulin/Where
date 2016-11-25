@@ -13,6 +13,7 @@
 		A13768541DE8C4FD007D92F4 /* WhereController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13768531DE8C4FD007D92F4 /* WhereController.m */; };
 		A13768591DE8C4FD007D92F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13768581DE8C4FD007D92F4 /* Assets.xcassets */; };
 		A137685C1DE8C4FD007D92F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A137685A1DE8C4FD007D92F4 /* LaunchScreen.storyboard */; };
+		A13768671DE8CC41007D92F4 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13768661DE8CC41007D92F4 /* MapController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		A13768581DE8C4FD007D92F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A137685B1DE8C4FD007D92F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A137685D1DE8C4FD007D92F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13768651DE8CC41007D92F4 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		A13768661DE8CC41007D92F4 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +96,28 @@
 		A13768631DE8C6BA007D92F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A13768641DE8CC31007D92F4 /* Where */,
+				A13768681DE8CC47007D92F4 /* Map */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A13768641DE8CC31007D92F4 /* Where */ = {
+			isa = PBXGroup;
+			children = (
 				A13768521DE8C4FD007D92F4 /* WhereController.h */,
 				A13768531DE8C4FD007D92F4 /* WhereController.m */,
 			);
-			name = Controllers;
+			name = Where;
+			sourceTree = "<group>";
+		};
+		A13768681DE8CC47007D92F4 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A13768651DE8CC41007D92F4 /* MapController.h */,
+				A13768661DE8CC41007D92F4 /* MapController.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		B76A6C61D92024960260695B /* Pods */ = {
@@ -229,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13768671DE8CC41007D92F4 /* MapController.m in Sources */,
 				A13768541DE8C4FD007D92F4 /* WhereController.m in Sources */,
 				A13768511DE8C4FD007D92F4 /* AppDelegate.m in Sources */,
 				A137684E1DE8C4FD007D92F4 /* main.m in Sources */,
@@ -382,6 +404,7 @@
 				A13768621DE8C4FD007D92F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
