@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@import MapKit;
+
 @interface MapController : UIViewController
+
++ (instancetype)mapControllerWithRegion:(MKCoordinateRegion)region;
 
 @end
