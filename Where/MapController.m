@@ -24,6 +24,10 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.mapView = [[MKMapView alloc] init];
+        self.mapView.zoomEnabled = NO;
+        self.mapView.pitchEnabled = NO;
+        self.mapView.rotateEnabled = NO;
+        self.mapView.scrollEnabled = NO;
     }
     return self;
 }
