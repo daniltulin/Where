@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "WhereController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    ViewController *controller = [[ViewController alloc] init];
+    WhereController *controller = [[WhereController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc]
                                                     initWithRootViewController:controller];
     
