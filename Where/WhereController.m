@@ -6,13 +6,13 @@
 //  Copyright © 2016 Daniil Tulin. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "WhereController.h"
 
-@interface ViewController ()
+@interface WhereController ()
 
 @end
 
-@implementation ViewController
+@implementation WhereController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
