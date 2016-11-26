@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "WhereAPI.h"
+
 @import MapKit;
 
 @interface MapController : UIViewController
 
-+ (instancetype)mapControllerWithRegion:(MKCoordinateRegion)region;
++ (instancetype)mapControllerWithRegion:(MKCoordinateRegion)region
+                            andColoring:(Coloring *)coloring;
 
 @end
