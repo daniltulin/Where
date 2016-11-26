@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20B9F60B3792985C84A6AB9B /* libPods-Where.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10007C4775CE657949623181 /* libPods-Where.a */; };
+		A128BBE61DE98EAB00041830 /* GradientRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A128BBE51DE98EAB00041830 /* GradientRenderer.m */; };
 		A137684E1DE8C4FD007D92F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A137684D1DE8C4FD007D92F4 /* main.m */; };
 		A13768511DE8C4FD007D92F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13768501DE8C4FD007D92F4 /* AppDelegate.m */; };
 		A13768591DE8C4FD007D92F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13768581DE8C4FD007D92F4 /* Assets.xcassets */; };
@@ -21,6 +22,8 @@
 		10007C4775CE657949623181 /* libPods-Where.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Where.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD7EB71EDCF3B60F58C9803 /* Pods-Where.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where.release.xcconfig"; path = "Pods/Target Support Files/Pods-Where/Pods-Where.release.xcconfig"; sourceTree = "<group>"; };
 		748BC9DF65F9B38D67EA9E13 /* Pods-Where.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Where.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Where/Pods-Where.debug.xcconfig"; sourceTree = "<group>"; };
+		A128BBE41DE98EAB00041830 /* GradientRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradientRenderer.h; path = Model/GradientPolygonRenderer/GradientRenderer.h; sourceTree = "<group>"; };
+		A128BBE51DE98EAB00041830 /* GradientRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradientRenderer.m; path = Model/GradientPolygonRenderer/GradientRenderer.m; sourceTree = "<group>"; };
 		A13768491DE8C4FD007D92F4 /* Where.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Where.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A137684D1DE8C4FD007D92F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A137684F1DE8C4FD007D92F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +57,15 @@
 				10007C4775CE657949623181 /* libPods-Where.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A128BBE71DE98EB300041830 /* GradientPolygonRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				A128BBE41DE98EAB00041830 /* GradientRenderer.h */,
+				A128BBE51DE98EAB00041830 /* GradientRenderer.m */,
+			);
+			name = GradientPolygonRenderer;
 			sourceTree = "<group>";
 		};
 		A13768401DE8C4FD007D92F4 = {
@@ -137,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				A155F5311DE8E2C100B4E4BE /* WhereAPI */,
+				A128BBE71DE98EB300041830 /* GradientPolygonRenderer */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -184,6 +197,7 @@
 				TargetAttributes = {
 					A13768481DE8C4FD007D92F4 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 34F67V55EC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -272,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13768511DE8C4FD007D92F4 /* AppDelegate.m in Sources */,
+				A128BBE61DE98EAB00041830 /* GradientRenderer.m in Sources */,
 				A155F5351DE8E3F200B4E4BE /* MapController.m in Sources */,
 				A137684E1DE8C4FD007D92F4 /* main.m in Sources */,
 				A155F53B1DE8E40F00B4E4BE /* WhereAPI.m in Sources */,
@@ -386,11 +401,13 @@
 			baseConfigurationReference = 748BC9DF65F9B38D67EA9E13 /* Pods-Where.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 34F67V55EC;
 				INFOPLIST_FILE = Where/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulindanil.Where;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -399,11 +416,13 @@
 			baseConfigurationReference = 4BD7EB71EDCF3B60F58C9803 /* Pods-Where.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 34F67V55EC;
 				INFOPLIST_FILE = Where/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tulindanil.Where;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
