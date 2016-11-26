@@ -37,9 +37,20 @@
 
 @interface Coloring ()
 
+@property (nonatomic, readwrite) NSUInteger rowsQty;
+@property (nonatomic, readwrite) NSUInteger columnsQty;
+
 @end
 
 @implementation Coloring
+
+- (NSUInteger)rowsQty {
+    return self.matrix.count;
+}
+
+- (NSUInteger)columnsQty {
+    return self.matrix[0].count;
+}
 
 @end
 
@@ -66,16 +77,16 @@ float z(float x, float y, float a, float b) {
 
     NSUInteger rowsQty = request.rowsQty, columnsQty = request.columnsQty;
 
-    NSMutableArray *rows = [NSMutableArray arrayWithCapacity:rowsQty];
-    for (int row = 0; row < rowsQty; row++) {
-        rows[row] = [NSMutableArray arrayWithCapacity:columnsQty];
-        for (int column = 0; column < columnsQty; column++) {
+    NSMutableArray *rows = [NSMutableArray arrayWithCapacity:rowsQty + 1];
+    for (int row = 0; row < rowsQty + 1; row++) {
+        rows[row] = [NSMutableArray arrayWithCapacity:columnsQty + 1];
+        for (int column = 0; column < columnsQty + 1; column++) {
             float z_ = z(row, column,
                         columnsQty/2, rowsQty/2);
             rows[row][column] = [NSNumber numberWithFloat:z_];
-            NSLog(@"%d %d %f", row, column, z_);
         }
     }
+    coloring.matrix = rows;
 
     dispatch_block_t wrapper = ^{
         if (handler != nil)

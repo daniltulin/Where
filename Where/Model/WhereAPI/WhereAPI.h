@@ -27,6 +27,9 @@
 
 @interface Coloring : NSObject
 
+@property (readonly) NSUInteger rowsQty;
+@property (readonly) NSUInteger columnsQty;
+
 @property (nonatomic) NSArray<NSArray<NSNumber *> *> *matrix;
 
 @end
