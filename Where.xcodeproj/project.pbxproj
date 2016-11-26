@@ -10,10 +10,11 @@
 		20B9F60B3792985C84A6AB9B /* libPods-Where.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10007C4775CE657949623181 /* libPods-Where.a */; };
 		A137684E1DE8C4FD007D92F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A137684D1DE8C4FD007D92F4 /* main.m */; };
 		A13768511DE8C4FD007D92F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A13768501DE8C4FD007D92F4 /* AppDelegate.m */; };
-		A13768541DE8C4FD007D92F4 /* WhereController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13768531DE8C4FD007D92F4 /* WhereController.m */; };
 		A13768591DE8C4FD007D92F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13768581DE8C4FD007D92F4 /* Assets.xcassets */; };
 		A137685C1DE8C4FD007D92F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A137685A1DE8C4FD007D92F4 /* LaunchScreen.storyboard */; };
-		A13768671DE8CC41007D92F4 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13768661DE8CC41007D92F4 /* MapController.m */; };
+		A155F5351DE8E3F200B4E4BE /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = A155F5341DE8E3F200B4E4BE /* MapController.m */; };
+		A155F5381DE8E40500B4E4BE /* WhereController.m in Sources */ = {isa = PBXBuildFile; fileRef = A155F5371DE8E40500B4E4BE /* WhereController.m */; };
+		A155F53B1DE8E40F00B4E4BE /* WhereAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A155F53A1DE8E40F00B4E4BE /* WhereAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,13 +25,15 @@
 		A137684D1DE8C4FD007D92F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A137684F1DE8C4FD007D92F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A13768501DE8C4FD007D92F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A13768521DE8C4FD007D92F4 /* WhereController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereController.h; sourceTree = "<group>"; };
-		A13768531DE8C4FD007D92F4 /* WhereController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereController.m; sourceTree = "<group>"; };
 		A13768581DE8C4FD007D92F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A137685B1DE8C4FD007D92F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A137685D1DE8C4FD007D92F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A13768651DE8CC41007D92F4 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
-		A13768661DE8CC41007D92F4 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		A155F5331DE8E3F200B4E4BE /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapController.h; path = Controller/MapController/MapController.h; sourceTree = "<group>"; };
+		A155F5341DE8E3F200B4E4BE /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapController.m; path = Controller/MapController/MapController.m; sourceTree = "<group>"; };
+		A155F5361DE8E40500B4E4BE /* WhereController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhereController.h; path = Controller/WhereController/WhereController.h; sourceTree = "<group>"; };
+		A155F5371DE8E40500B4E4BE /* WhereController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhereController.m; path = Controller/WhereController/WhereController.m; sourceTree = "<group>"; };
+		A155F5391DE8E40F00B4E4BE /* WhereAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhereAPI.h; path = Model/WhereAPI/WhereAPI.h; sourceTree = "<group>"; };
+		A155F53A1DE8E40F00B4E4BE /* WhereAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhereAPI.m; path = Model/WhereAPI/WhereAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +77,8 @@
 		A137684B1DE8C4FD007D92F4 /* Where */ = {
 			isa = PBXGroup;
 			children = (
-				A13768631DE8C6BA007D92F4 /* Controllers */,
+				A155F5321DE8E2FA00B4E4BE /* Model */,
+				A13768631DE8C6BA007D92F4 /* Controller */,
 				A137684C1DE8C4FD007D92F4 /* Supporting Files */,
 			);
 			path = Where;
@@ -93,31 +97,48 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A13768631DE8C6BA007D92F4 /* Controllers */ = {
+		A13768631DE8C6BA007D92F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A13768641DE8CC31007D92F4 /* Where */,
-				A13768681DE8CC47007D92F4 /* Map */,
+				A13768641DE8CC31007D92F4 /* WhereController */,
+				A13768681DE8CC47007D92F4 /* MapController */,
 			);
-			name = Controllers;
+			name = Controller;
 			sourceTree = "<group>";
 		};
-		A13768641DE8CC31007D92F4 /* Where */ = {
+		A13768641DE8CC31007D92F4 /* WhereController */ = {
 			isa = PBXGroup;
 			children = (
-				A13768521DE8C4FD007D92F4 /* WhereController.h */,
-				A13768531DE8C4FD007D92F4 /* WhereController.m */,
+				A155F5361DE8E40500B4E4BE /* WhereController.h */,
+				A155F5371DE8E40500B4E4BE /* WhereController.m */,
 			);
-			name = Where;
+			name = WhereController;
 			sourceTree = "<group>";
 		};
-		A13768681DE8CC47007D92F4 /* Map */ = {
+		A13768681DE8CC47007D92F4 /* MapController */ = {
 			isa = PBXGroup;
 			children = (
-				A13768651DE8CC41007D92F4 /* MapController.h */,
-				A13768661DE8CC41007D92F4 /* MapController.m */,
+				A155F5331DE8E3F200B4E4BE /* MapController.h */,
+				A155F5341DE8E3F200B4E4BE /* MapController.m */,
 			);
-			name = Map;
+			name = MapController;
+			sourceTree = "<group>";
+		};
+		A155F5311DE8E2C100B4E4BE /* WhereAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A155F5391DE8E40F00B4E4BE /* WhereAPI.h */,
+				A155F53A1DE8E40F00B4E4BE /* WhereAPI.m */,
+			);
+			name = WhereAPI;
+			sourceTree = "<group>";
+		};
+		A155F5321DE8E2FA00B4E4BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A155F5311DE8E2C100B4E4BE /* WhereAPI */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		B76A6C61D92024960260695B /* Pods */ = {
@@ -250,10 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13768671DE8CC41007D92F4 /* MapController.m in Sources */,
-				A13768541DE8C4FD007D92F4 /* WhereController.m in Sources */,
 				A13768511DE8C4FD007D92F4 /* AppDelegate.m in Sources */,
+				A155F5351DE8E3F200B4E4BE /* MapController.m in Sources */,
 				A137684E1DE8C4FD007D92F4 /* main.m in Sources */,
+				A155F53B1DE8E40F00B4E4BE /* WhereAPI.m in Sources */,
+				A155F5381DE8E40500B4E4BE /* WhereController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
